@@ -1,0 +1,38 @@
+:: StoryTitle
+Studio Project
+
+
+:: StoryData
+{
+  "ifid": "8D245948-8A92-4927-9B60-FDFE5F8EFAA0",
+  "format": "SugarCube",
+  "format-version": "2.36.1",
+  "start": "Intro",
+  "zoom": 1
+}
+
+
+:: \ jupiter dialogue vs venus {"position":"125,1975","size":"100,100"}
+[[jupiter vs venus decision]]
+
+
+:: Intro {"position":"500,50","size":"100,100"}
+BOOM *loud crash sound effect*
+
+...
+
+An asteroid is heading to you full speed.
+
+... 
+
+You need to intervene to save your home. But your friends have different ideas on how to save it. 
+
+
+[[Your time is limited.]]
+
+
+
+
+
+
+
