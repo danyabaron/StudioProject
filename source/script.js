@@ -11,6 +11,7 @@ setup.p5promise = importScripts([
         let mars;    // Variable to hold Mars position and size
     
         // Preload Mars image
+        // getting a  CORS error on this
         p.preload = function () {
             marsImg = p.loadImage('./assets/mars-art/mars-art-official.png'); // Adjust path as needed
         };
