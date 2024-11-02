@@ -1,0 +1,18 @@
+body {
+    background-color: white;
+    color: darkgrey;
+    font-family: Futura,Impact,Helvetica,sans-serif;
+    font-size: 125%;
+   }
+
+
+/* 
+#passage-intro
+{
+    background-color: red;
+
+} */
+
+html.mars-background body {
+    background-color: red;
+}

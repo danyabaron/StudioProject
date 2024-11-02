@@ -1,4 +1,5 @@
 :: Your time is limited. {"position":"500,200","size":"100,100"}
+<<addclass "html" "mars-background">>\
 Man, let’s just blow this asteroid up. I seriously don’t know what all the fuss is about. If this guy wants to attack, we should just attack back.
 
 /* [[You really think so?]] */
