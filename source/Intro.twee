@@ -12,9 +12,9 @@ Studio Project
 }
 
 
+:: Intro[intro]
 
-:: Intro {"position":"500,50","size":"100,100"}
-BOOM *loud crash sound effect*
+BOOM 
 
 ...
 
@@ -25,7 +25,14 @@ An asteroid is heading to you full speed.
 You need to intervene to save your home. But your friends have different ideas on how to save it. 
 
 
-[[Your time is limited.]]
+[[What do I need to do?]]
+
+::What do I need to do?[intro]
+You must talk with your fellow planets to figure out a solution to save your home.
+
+Make sure to keep an open mind, and listen to everyone.
+
+[[Let's do this]]
 
 
 

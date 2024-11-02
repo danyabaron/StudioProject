@@ -1,7 +1,3 @@
-/* @font-face {
-    font-family: '04b03';
-    src: url();
-} */
 
 body {
     background-image: url("./assets/backgrounds/default-background.png");
@@ -11,40 +7,60 @@ body {
     color: white;
     font-family: '04b03';
     
-    font-size: 125%;
+    font-size: 100%;
+    height: 100%;
+    min-height: 100%;
+   
+    display: flex;
+    justify-content: center;
+    align-items: center;
    }
 
 
-/* html body {
-    background-size: cover; 
-    background-repeat: no-repeat;
-    background-position: center;
-} */
+img {
+    image-rendering: pixelated;
+    image-rendering: -moz-crisp-edges;
+    image-rendering: crisp-edges;
+  } 
+
+.img-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+  }
+
+#story {
+	margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+#passages {
+    
+        max-width: none;
+        margin-left: 0;
+        margin-right: 0;
+    
+}
 
 
-/* 
-#passage-intro
-{
-    background-color: red;
-
-} */
-
-html.mars-background body {
+body.mars {
     background-image: url("./assets/backgrounds/mars-background.png");
-    background-size: cover;         /* Makes the image cover the entire screen */
-    background-repeat: no-repeat;   /* Prevents the image from repeating */
-    background-position: center;    /* Centers the image on the screen */
-
-  
+    background-size: cover;         
+    background-repeat: no-repeat;   
+    background-position: center;    
+    min-height: 100%;
+    height:100%;
 
 }
 
-html.jupiter-background body {
+body.jupiter {
     background-image: url("./assets/backgrounds/jupiter-background.png");
     background-size: cover;         /* Makes the image cover the entire screen */
     background-repeat: no-repeat;   /* Prevents the image from repeating */
     background-position: center;    /* Centers the image on the screen */
-
-  
+    height: 100%;
+    min-height: 100%;
 
 }
+

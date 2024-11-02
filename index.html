@@ -98,11 +98,7 @@ var LZString={_keyStr:"ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz01234
 		<div id="init-lacking"><p>Browser lacks capabilities required to play.</p><p>Upgrade or switch to another browser.</p></div>
 		<div id="init-loading"><div>Loading&hellip;</div></div>
 	</div>
-	<!-- UUID://8D245948-8A92-4927-9B60-FDFE5F8EFAA0// --><tw-storydata name="Studio Project" startnode="1" creator="Tweego" creator-version="2.1.1+81d1d71" ifid="8D245948-8A92-4927-9B60-FDFE5F8EFAA0" zoom="1" format="SugarCube" format-version="2.36.1" options="" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">/* @font-face {
-    font-family: '04b03';
-    src: url();
-} */
-
+	<!-- UUID://8D245948-8A92-4927-9B60-FDFE5F8EFAA0// --><tw-storydata name="Studio Project" startnode="1" creator="Tweego" creator-version="2.1.1+81d1d71" ifid="8D245948-8A92-4927-9B60-FDFE5F8EFAA0" zoom="1" format="SugarCube" format-version="2.36.1" options="" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">
 body {
     background-image: url("./assets/backgrounds/default-background.png");
     background-size: cover;         /* Makes the image cover the entire screen */
@@ -111,43 +107,63 @@ body {
     color: white;
     font-family: '04b03';
     
-    font-size: 125%;
+    font-size: 100%;
+    height: 100%;
+    min-height: 100%;
+   
+    display: flex;
+    justify-content: center;
+    align-items: center;
    }
 
 
-/* html body {
-    background-size: cover; 
-    background-repeat: no-repeat;
-    background-position: center;
-} */
+img {
+    image-rendering: pixelated;
+    image-rendering: -moz-crisp-edges;
+    image-rendering: crisp-edges;
+  } 
+
+.img-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+  }
+
+#story {
+	margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+#passages {
+    
+        max-width: none;
+        margin-left: 0;
+        margin-right: 0;
+    
+}
 
 
-/* 
-#passage-intro
-{
-    background-color: red;
-
-} */
-
-html.mars-background body {
+body.mars {
     background-image: url("./assets/backgrounds/mars-background.png");
-    background-size: cover;         /* Makes the image cover the entire screen */
-    background-repeat: no-repeat;   /* Prevents the image from repeating */
-    background-position: center;    /* Centers the image on the screen */
-
-  
+    background-size: cover;         
+    background-repeat: no-repeat;   
+    background-position: center;    
+    min-height: 100%;
+    height:100%;
 
 }
 
-html.jupiter-background body {
+body.jupiter {
     background-image: url("./assets/backgrounds/jupiter-background.png");
     background-size: cover;         /* Makes the image cover the entire screen */
     background-repeat: no-repeat;   /* Prevents the image from repeating */
     background-position: center;    /* Centers the image on the screen */
-
-  
+    height: 100%;
+    min-height: 100%;
 
 }
+
 </style><script role="script" id="twine-user-script" type="text/twine-javascript">setup.p5promise = importScripts([
     "https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.6.1/p5.min.js",
         "https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.6.1/addons/p5.dom.min.js",
@@ -252,7 +268,7 @@ html.jupiter-background body {
     };
     
     
-    </script><tw-passagedata pid="1" name="Intro" tags="" position="500,50" size="100,100">BOOM *loud crash sound effect*
+    </script><tw-passagedata pid="1" name="Intro" tags="intro" position="100,100" size="100,100">BOOM 
 
 ...
 
@@ -263,29 +279,47 @@ An asteroid is heading to you full speed.
 You need to intervene to save your home. But your friends have different ideas on how to save it. 
 
 
-[[Your time is limited.]]</tw-passagedata><tw-passagedata pid="2" name="LET&#39;S BLOW THIS ASTEROID UP" tags="" position="225,100" size="100,100">!!Below you should see a basic p5js asteroid game.
+[[What do I need to do?]]</tw-passagedata><tw-passagedata pid="2" name="What do I need to do?" tags="intro" position="225,100" size="100,100">You must talk with your fellow planets to figure out a solution to save your home.
+
+Make sure to keep an open mind, and listen to everyone.
+
+[[Let&#39;s do this]]</tw-passagedata><tw-passagedata pid="3" name="LET&#39;S BLOW THIS ASTEROID UP" tags="" position="350,100" size="100,100">!!Below you should see a basic p5js asteroid game.
 &lt;div id=&quot;p5sketch&quot;&gt;&lt;/div&gt;
 
 &lt;&lt;script&gt;&gt;
 $(document).on(&#39;:passageend&#39;, function () {
         new p5(setup.asteroidGame, &#39;p5sketch&#39;);
     });
-&lt;&lt;/script&gt;&gt;</tw-passagedata><tw-passagedata pid="3" name="Your time is limited." tags="" position="500,200" size="100,100">&lt;&lt;addclass &quot;html&quot; &quot;mars-background&quot;&gt;&gt;\
+&lt;&lt;/script&gt;&gt;</tw-passagedata><tw-passagedata pid="4" name="Let&#39;s do this" tags="mars" position="475,100" size="100,100">&lt;div id=&quot;mars-img&quot; class=&quot;img-container&quot;&gt;
+    &lt;&lt;nobr&gt;&gt;
+        &lt;img src=&quot;assets\mars-art\mars-art-official.png&quot; width=&quot;253&quot; height=&quot;253&quot;&gt;
+    &lt;&lt;/nobr&gt;&gt;
+
+&lt;/div&gt;
+
 Man, let’s just blow this asteroid up. I seriously don’t know what all the fuss is about. If this guy wants to attack, we should just attack back.
 
-/* [[You really think so?]] */
-
-/* :: You really think so? */
 Unless Jupiter has a better idea. They probably won’t though.
 
-[[Jupiter?]]</tw-passagedata><tw-passagedata pid="4" name="Jupiter?" tags="" position="475,100" size="100,100">&lt;&lt;removeclass &quot;html&quot; &quot;mars-background&quot;&gt;&gt;&lt;&lt;addclass &quot;html&quot; &quot;jupiter-background&quot;&gt;&gt;\
+[[Jupiter?]]</tw-passagedata><tw-passagedata pid="5" name="Jupiter?" tags="jupiter" position="600,100" size="100,100">&lt;div id=&quot;jupiter-img&quot; class=&quot;img-container&quot;&gt;
+    &lt;&lt;nobr&gt;&gt;
+        &lt;img src=&quot;assets\jupiter-art\jupiter-art-annoyed.png&quot; height=&quot;253&quot;&gt;
+    &lt;&lt;/nobr&gt;&gt;
+
+&lt;/div&gt;
+
 Seriously… is that what Mars said? They are such an idiot sometimes. This asteroid definitely just needs some attention. I mean that’s probably why it’s doing this. 
 
 I say try to negotiate with the guy. Or maybe there’s a greater purpose to all of this. Maybe the asteroid isn’t even going to hit us at all. 
 
 Ugh... what is Mars trying to say now?
 
-[[I think Mars is trying to say something]]</tw-passagedata><tw-passagedata pid="5" name="I think Mars is trying to say something" tags="" position="600,100" size="100,100">&lt;&lt;removeclass &quot;html&quot; &quot;jupiter-background&quot;&gt;&gt;&lt;&lt;addclass &quot;html&quot; &quot;mars-background&quot;&gt;&gt;\
+[[I think Mars is trying to say something]]</tw-passagedata><tw-passagedata pid="6" name="I think Mars is trying to say something" tags="mars" position="725,100" size="100,100">&lt;div id=&quot;mars-img&quot; class=&quot;img-container&quot;&gt;
+    &lt;&lt;nobr&gt;&gt;
+        &lt;img src=&quot;assets\mars-art\mars-art-official.png&quot; width=&quot;253&quot; height=&quot;253&quot;&gt;
+    &lt;&lt;/nobr&gt;&gt;
+
+&lt;/div&gt;
 
 WAR GODAMMIT WAR! God. No one ever wants to go to war with me. Jupiter thinks that everything is a ‘sign’.
 
@@ -297,17 +331,19 @@ I mean think about that time you were in traffic yesterday, and that dude cut yo
 
 No, it&#39;s a metaphor. Ugh. I am just saying to EMBRACE the rage! This asteroid obviously has an issue with us, otherwise it wouldn’t be hurtling over here. I’m just saying to not let it get away with this.
 
-[[I guess you make a good point]]</tw-passagedata><tw-passagedata pid="6" name="I guess you make a good point" tags="" position="725,100" size="100,100">&lt;&lt;removeclass &quot;html&quot; &quot;mars-background&quot;&gt;&gt;&lt;&lt;addclass &quot;html&quot; &quot;jupiter-background&quot;&gt;&gt;\
+[[I guess you make a good point]]</tw-passagedata><tw-passagedata pid="7" name="I guess you make a good point" tags="jupiter" position="850,100" size="100,100">&lt;div id=&quot;jupiter-img&quot; class=&quot;img-container&quot;&gt;
+    &lt;&lt;nobr&gt;&gt;
+        &lt;img src=&quot;assets\jupiter-art\jupiter-art.png&quot; height=&quot;253&quot;&gt;
+    &lt;&lt;/nobr&gt;&gt;
 
-
+&lt;/div&gt;
 
 Mars needs to just listen to others for once. Not everything needs to be filled with aggression. Also, why does Mars even want to fight it? Does he know what that’s going to cause?
 
 The universe is expansive. Maybe there’s a greater meaning behind all of this. Maybe the asteroid isn’t even hitting us, maybe 
 it’s coming over here to offer us something. Regardless, I think everything will be okay in the end.
 
-[[I sure hope so]]</tw-passagedata><tw-passagedata pid="7" name="I sure hope so" tags="" position="850,100" size="100,100">&lt;&lt;removeclass &quot;html&quot; &quot;jupiter-background&quot;&gt;&gt;\
-Mars wants to fight the asteroid head on. Jupiter wants a more hands off approach. Both approaches could work… but it’s up to you on what you think is best. 
+[[I sure hope so]]</tw-passagedata><tw-passagedata pid="8" name="I sure hope so" tags="" position="975,100" size="100,100">Mars wants to fight the asteroid head on. Jupiter wants a more hands off approach. Both approaches could work… but it’s up to you on what you think is best. 
 
 Choose wisely, as this decision will require a little bit more of your help.
 
