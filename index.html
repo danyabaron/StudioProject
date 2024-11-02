@@ -98,22 +98,26 @@ var LZString={_keyStr:"ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz01234
 		<div id="init-lacking"><p>Browser lacks capabilities required to play.</p><p>Upgrade or switch to another browser.</p></div>
 		<div id="init-loading"><div>Loading&hellip;</div></div>
 	</div>
-	<!-- UUID://8D245948-8A92-4927-9B60-FDFE5F8EFAA0// --><tw-storydata name="Studio Project" startnode="1" creator="Tweego" creator-version="2.1.1+81d1d71" ifid="8D245948-8A92-4927-9B60-FDFE5F8EFAA0" zoom="1" format="SugarCube" format-version="2.36.1" options="" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">
+	<!-- UUID://8D245948-8A92-4927-9B60-FDFE5F8EFAA0// --><tw-storydata name="Studio Project" startnode="1" creator="Tweego" creator-version="2.1.1+81d1d71" ifid="8D245948-8A92-4927-9B60-FDFE5F8EFAA0" zoom="1" format="SugarCube" format-version="2.36.1" options="" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css"> html {
+
+ }
+
+
 body {
     background-image: url("./assets/backgrounds/default-background.png");
     background-size: cover;         /* Makes the image cover the entire screen */
     background-repeat: no-repeat;   /* Prevents the image from repeating */
     background-position: center;    /* Centers the image on the screen */
-    color: white;
-    font-family: '04b03';
-    
-    font-size: 100%;
     height: 100%;
     min-height: 100%;
-   
-    display: flex;
+
+    color: white;
+    font-family: '04b03';  
+    font-size: 100%;
+    
     justify-content: center;
     align-items: center;
+    overflow: scroll;
    }
 
 
@@ -130,18 +134,17 @@ img {
 
   }
 
-#story {
+/* #story {
 	margin-top: 15px;
     margin-bottom: 15px;
 }
 
-#passages {
-    
+#passages {   
         max-width: none;
         margin-left: 0;
         margin-right: 0;
     
-}
+} */
 
 
 body.mars {
@@ -151,8 +154,18 @@ body.mars {
     background-position: center;    
     min-height: 100%;
     height:100%;
+}
+
+.passage.mars {
+    background-color: red;
+   
 
 }
+
+/* .passage.mars {
+   
+    height: 100%;
+} */
 
 body.jupiter {
     background-image: url("./assets/backgrounds/jupiter-background.png");
