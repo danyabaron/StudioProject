@@ -5,6 +5,11 @@
 
 <<script>>
 $(document).on(':passageend', function () {
+    setup.p5promise.then(function () {
         new p5(setup.asteroidGame, 'p5sketch');
+        });
     });
 <</script>>
+
+
+
