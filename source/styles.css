@@ -1,9 +1,25 @@
+/* @font-face {
+    font-family: '04b03';
+    src: url();
+} */
+
 body {
-    background-color: white;
-    color: darkgrey;
-    font-family: Futura,Impact,Helvetica,sans-serif;
+    background-image: url("./assets/backgrounds/default-background.png");
+    background-size: cover;         /* Makes the image cover the entire screen */
+    background-repeat: no-repeat;   /* Prevents the image from repeating */
+    background-position: center;    /* Centers the image on the screen */
+    color: white;
+    font-family: '04b03';
+    
     font-size: 125%;
    }
+
+
+/* html body {
+    background-size: cover; 
+    background-repeat: no-repeat;
+    background-position: center;
+} */
 
 
 /* 
@@ -14,5 +30,21 @@ body {
 } */
 
 html.mars-background body {
-    background-color: red;
+    background-image: url("./assets/backgrounds/mars-background.png");
+    background-size: cover;         /* Makes the image cover the entire screen */
+    background-repeat: no-repeat;   /* Prevents the image from repeating */
+    background-position: center;    /* Centers the image on the screen */
+
+  
+
+}
+
+html.jupiter-background body {
+    background-image: url("./assets/backgrounds/jupiter-background.png");
+    background-size: cover;         /* Makes the image cover the entire screen */
+    background-repeat: no-repeat;   /* Prevents the image from repeating */
+    background-position: center;    /* Centers the image on the screen */
+
+  
+
 }

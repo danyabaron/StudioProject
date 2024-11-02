@@ -10,6 +10,7 @@ Unless Jupiter has a better idea. They probably won’t though.
 [[Jupiter?]]
 
 :: Jupiter?
+<<removeclass "html" "mars-background">><<addclass "html" "jupiter-background">>\
 Seriously… is that what Mars said? They are such an idiot sometimes. This asteroid definitely just needs some attention. I mean that’s probably why it’s doing this. 
 
 I say try to negotiate with the guy. Or maybe there’s a greater purpose to all of this. Maybe the asteroid isn’t even going to hit us at all. 
@@ -19,6 +20,7 @@ Ugh... what is Mars trying to say now?
 [[I think Mars is trying to say something]]
 
 :: I think Mars is trying to say something
+<<removeclass "html" "jupiter-background">><<addclass "html" "mars-background">>\
 
 WAR GODAMMIT WAR! God. No one ever wants to go to war with me. Jupiter thinks that everything is a ‘sign’.
 
@@ -33,6 +35,9 @@ No, it's a metaphor. Ugh. I am just saying to EMBRACE the rage! This asteroid ob
 [[I guess you make a good point]]
 
 :: I guess you make a good point
+<<removeclass "html" "mars-background">><<addclass "html" "jupiter-background">>\
+
+
 
 Mars needs to just listen to others for once. Not everything needs to be filled with aggression. Also, why does Mars even want to fight it? Does he know what that’s going to cause?
 
@@ -42,6 +47,7 @@ it’s coming over here to offer us something. Regardless, I think everything wi
 [[I sure hope so]]
 
 :: I sure hope so
+<<removeclass "html" "jupiter-background">>\
 Mars wants to fight the asteroid head on. Jupiter wants a more hands off approach. Both approaches could work… but it’s up to you on what you think is best. 
 
 Choose wisely, as this decision will require a little bit more of your help.
