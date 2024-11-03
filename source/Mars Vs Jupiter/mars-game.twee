@@ -1,12 +1,12 @@
 ::LET'S BLOW THIS ASTEROID UP
 
 !!Below you should see a basic p5js asteroid game.
-<div id="p5sketch"></div>
+<div id="mars-game"></div>
 
 <<script>>
 $(document).on(':passageend', function () {
     setup.p5promise.then(function () {
-        new p5(setup.asteroidGame, 'p5sketch');
+        new p5(setup.asteroidGame, 'mars-game');
         });
     });
 <</script>>
