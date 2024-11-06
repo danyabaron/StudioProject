@@ -6,17 +6,25 @@ body::-webkit-scrollbar {
     display: none;
 }
 
+/* html {
+    height: 100%;
+    width: 100%;
+} */
 
 /* this background image is the one that is not properly displaying but 
 when I change things it distorts the body.mars and body.jupiter backgrounds */
 
 body {
     background-image: url("./assets/backgrounds/default-background.png");
-    background-size: cover;         /* Makes the image cover the entire screen */
-    background-repeat: no-repeat;   /* Prevents the image from repeating */
-    background-position: center;    /* Centers the image on the screen */
+            
+    background-repeat: no-repeat;   
+    /* background-position: center;     */
     height: 100%;
     min-height: 100%;
+
+    position: relative;
+    background-size:100% 100vh;
+
 
     color: white;
     font-family: '04b03';  
@@ -63,6 +71,16 @@ body.jupiter {
     background-position: center;    /* Centers the image on the screen */
     height: 100%;
     min-height: 100%;
+
+}
+
+tw-link.default-link {
+    color: #e74c3c; /* Different color for this link */
+    font-style: italic; /* Italicize this specific link */
+}
+
+.passage { 
+    transition-duration: 2s; 
 
 }
 
