@@ -114,16 +114,24 @@ body::-webkit-scrollbar {
 /* this background image is the one that is not properly displaying but 
 when I change things it distorts the body.mars and body.jupiter backgrounds */
 
+/* #ui-bar {
+	display: none;
+} */
+
 body {
     background-image: url("./assets/backgrounds/default-background.png");
             
     background-repeat: no-repeat;   
     /* background-position: center;     */
-    height: 100%;
+    /* height: 100%;
     min-height: 100%;
 
     position: relative;
-    background-size:100% 100vh;
+    background-size:100% 100vh; */
+
+    background-repeat:no-repeat;
+
+    background-size:cover;
 
 
     color: white;
@@ -181,8 +189,15 @@ tw-link.default-link {
 
 .passage { 
     transition-duration: 2s; 
+    
 
 }
+
+#mars-game {
+
+
+}
+
 
 </style><script role="script" id="twine-user-script" type="text/twine-javascript">console.log('before i import script');
 setup.p5promise = importScripts([
@@ -513,7 +528,7 @@ You need to intervene to save your home. But your friends have different ideas o
 
 Make sure to keep an open mind, and listen to everyone.
 
-[[Let&#39;s do this]]</tw-passagedata><tw-passagedata pid="3" name="LET&#39;S BLOW THIS ASTEROID UP" tags="" position="350,100" size="100,100">!!Below you should see a basic p5js asteroid game.
+[[Let&#39;s do this]]</tw-passagedata><tw-passagedata pid="3" name="LET&#39;S BLOW THIS ASTEROID UP" tags="" position="350,100" size="100,100">!!Defeat the incoming asteroids with Mars&#39; help!
 &lt;div id=&quot;mars-game&quot;&gt;&lt;/div&gt;
 
 

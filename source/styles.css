@@ -14,16 +14,24 @@ body::-webkit-scrollbar {
 /* this background image is the one that is not properly displaying but 
 when I change things it distorts the body.mars and body.jupiter backgrounds */
 
+/* #ui-bar {
+	display: none;
+} */
+
 body {
     background-image: url("./assets/backgrounds/default-background.png");
             
     background-repeat: no-repeat;   
     /* background-position: center;     */
-    height: 100%;
+    /* height: 100%;
     min-height: 100%;
 
     position: relative;
-    background-size:100% 100vh;
+    background-size:100% 100vh; */
+
+    background-repeat:no-repeat;
+
+    background-size:cover;
 
 
     color: white;
@@ -81,6 +89,13 @@ tw-link.default-link {
 
 .passage { 
     transition-duration: 2s; 
+    
 
 }
+
+#mars-game {
+
+
+}
+
 

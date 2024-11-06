@@ -1,6 +1,6 @@
 ::LET'S BLOW THIS ASTEROID UP
 
-!!Below you should see a basic p5js asteroid game.
+!!Defeat the incoming asteroids with Mars' help!
 <div id="mars-game"></div>
 
 
