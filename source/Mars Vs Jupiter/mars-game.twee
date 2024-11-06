@@ -3,12 +3,16 @@
 !!Below you should see a basic p5js asteroid game.
 <div id="mars-game"></div>
 
-<<script>>
-$(document).on(':passageend', function () {
 
+
+<<script>>
+console.log('before i load game in div');
+$(document).one(':passageend', function () {
+    setup.p5promise.then(function () {
         new p5(setup.asteroidGame, 'mars-game');
-       
+        });
     });
+console.log('after i load game in div')
 <</script>>
 
 

@@ -1,12 +1,18 @@
+console.log('before i import script');
 setup.p5promise = importScripts([
-    "https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.6.1/p5.min.js",
-    "https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.6.1/addons/p5.dom.min.js",
-    "https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.6.1/addons/p5.sound.min.js"
+	"https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.6.1/p5.min.js",
+	"https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.6.1/addons/p5.dom.min.js",
+	"https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.6.1/addons/p5.sound.min.js"
 
-    ]);
+]);
+
+console.log('after upload script');
 
 
 
+
+
+console.log('before game runs');
 setup.asteroidGame = function (p) {
         let asteroids = [];
         let bullets = [];
@@ -22,7 +28,7 @@ setup.asteroidGame = function (p) {
         };
     
         p.setup = function () {
-            const gameContainer = document.getElementById("p5sketch");
+            const gameContainer = document.getElementById("mars-game");
             p.createCanvas(600, 400).parent(gameContainer);
             
             // Create multiple asteroids with varying speeds
@@ -155,7 +161,9 @@ setup.asteroidGame = function (p) {
     
         // Bullet class
         class Bullet {
+            
             constructor(startX, startY) {
+                // this.p = p;
                 this.x = startX; // Start bullet at Mars position
                 this.y = startY;
                 this.r = 8; // Bullet size
@@ -167,13 +175,13 @@ setup.asteroidGame = function (p) {
             }
     
             display() {
-                this.p.fill(255, 255, 0); // Yellow bullet color
-                this.p.noStroke();
-                this.p.ellipse(this.x, this.y, this.r * 2);
+                p.fill(255, 255, 0); // Yellow bullet color
+                p.noStroke();
+                p.ellipse(this.x, this.y, this.r * 2);
             }
     
             hits(asteroid) {
-                let d = this.p.dist(this.x, this.y, asteroid.x, asteroid.y);
+                let d = p.dist(this.x, this.y, asteroid.x, asteroid.y);
                 return d < asteroid.size / 2 + this.r; // Collision detection
             }
     
@@ -181,7 +189,11 @@ setup.asteroidGame = function (p) {
                 return this.y < 0; // Check if the bullet is offscreen
             }
         }
+
+        console.log('set up bullet');
     };
+
+console.log('after game runs');
     
     
     // setup.asteroidGame = function (p) {

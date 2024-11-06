@@ -184,15 +184,21 @@ tw-link.default-link {
 
 }
 
-</style><script role="script" id="twine-user-script" type="text/twine-javascript">setup.p5promise = importScripts([
-    "https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.6.1/p5.min.js",
-    "https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.6.1/addons/p5.dom.min.js",
-    "https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.6.1/addons/p5.sound.min.js"
+</style><script role="script" id="twine-user-script" type="text/twine-javascript">console.log('before i import script');
+setup.p5promise = importScripts([
+	"https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.6.1/p5.min.js",
+	"https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.6.1/addons/p5.dom.min.js",
+	"https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.6.1/addons/p5.sound.min.js"
 
-    ]);
+]);
+
+console.log('after upload script');
 
 
 
+
+
+console.log('before game runs');
 setup.asteroidGame = function (p) {
         let asteroids = [];
         let bullets = [];
@@ -208,7 +214,7 @@ setup.asteroidGame = function (p) {
         };
     
         p.setup = function () {
-            const gameContainer = document.getElementById("p5sketch");
+            const gameContainer = document.getElementById("mars-game");
             p.createCanvas(600, 400).parent(gameContainer);
             
             // Create multiple asteroids with varying speeds
@@ -341,7 +347,9 @@ setup.asteroidGame = function (p) {
     
         // Bullet class
         class Bullet {
+            
             constructor(startX, startY) {
+                // this.p = p;
                 this.x = startX; // Start bullet at Mars position
                 this.y = startY;
                 this.r = 8; // Bullet size
@@ -353,13 +361,13 @@ setup.asteroidGame = function (p) {
             }
     
             display() {
-                this.p.fill(255, 255, 0); // Yellow bullet color
-                this.p.noStroke();
-                this.p.ellipse(this.x, this.y, this.r * 2);
+                p.fill(255, 255, 0); // Yellow bullet color
+                p.noStroke();
+                p.ellipse(this.x, this.y, this.r * 2);
             }
     
             hits(asteroid) {
-                let d = this.p.dist(this.x, this.y, asteroid.x, asteroid.y);
+                let d = p.dist(this.x, this.y, asteroid.x, asteroid.y);
                 return d < asteroid.size / 2 + this.r; // Collision detection
             }
     
@@ -367,7 +375,11 @@ setup.asteroidGame = function (p) {
                 return this.y < 0; // Check if the bullet is offscreen
             }
         }
+
+        console.log('set up bullet');
     };
+
+console.log('after game runs');
     
     
     // setup.asteroidGame = function (p) {
@@ -504,12 +516,16 @@ Make sure to keep an open mind, and listen to everyone.
 [[Let&#39;s do this]]</tw-passagedata><tw-passagedata pid="3" name="LET&#39;S BLOW THIS ASTEROID UP" tags="" position="350,100" size="100,100">!!Below you should see a basic p5js asteroid game.
 &lt;div id=&quot;mars-game&quot;&gt;&lt;/div&gt;
 
-&lt;&lt;script&gt;&gt;
-$(document).on(&#39;:passageend&#39;, function () {
 
+
+&lt;&lt;script&gt;&gt;
+console.log(&#39;before i load game in div&#39;);
+$(document).one(&#39;:passageend&#39;, function () {
+    setup.p5promise.then(function () {
         new p5(setup.asteroidGame, &#39;mars-game&#39;);
-       
+        });
     });
+console.log(&#39;after i load game in div&#39;)
 &lt;&lt;/script&gt;&gt;</tw-passagedata><tw-passagedata pid="4" name="Let&#39;s do this" tags="mars" position="475,100" size="100,100">&lt;div id=&quot;mars-img&quot; class=&quot;img-container&quot;&gt;
     &lt;&lt;nobr&gt;&gt;
         &lt;img src=&quot;assets\mars-art\mars-art-official.png&quot; width=&quot;253&quot; height=&quot;253&quot;&gt;
