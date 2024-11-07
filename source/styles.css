@@ -4,15 +4,11 @@
 body::-webkit-scrollbar {
   
     display: none;
+    
 }
 
-/* html {
-    height: 100%;
-    width: 100%;
-} */
 
-/* this background image is the one that is not properly displaying but 
-when I change things it distorts the body.mars and body.jupiter backgrounds */
+
 
 /* #ui-bar {
 	display: none;
@@ -36,15 +32,23 @@ body {
 
     color: white;
     font-family: '04b03';  
-    font-size: 100%;
+    font-size: 120%;
     
     justify-content: center;
     align-items: center;
-   
+    
+ 
     -ms-overflow-style: none; /* IE and Edge */
     scrollbar-width: none; /* Firefox */
     
    }
+
+.title-screen {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
 
 
 img {
@@ -59,6 +63,36 @@ img {
     align-items: center;
 
   }
+
+  .planets-intro {
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    flex-direction: row;
+}
+
+  .planet-images-intro {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    margin: 0;
+    padding: 0;
+   
+  }
+
+  .jupiter-intro-container {
+    align-self: flex-start;
+  }
+
+  .mars-intro-container {
+    display: flex;
+    flex-direction: row;
+    align-self: start;
+    justify-content: space-between;
+    gap: 20px;
+  }
+
+
 
 
 
@@ -82,10 +116,6 @@ body.jupiter {
 
 }
 
-tw-link.default-link {
-    color: #e74c3c; /* Different color for this link */
-    font-style: italic; /* Italicize this specific link */
-}
 
 .passage { 
     transition-duration: 2s; 
@@ -93,9 +123,60 @@ tw-link.default-link {
 
 }
 
-#mars-game {
 
+
+.intro-link a {
+    display: inline-block;          /* Allows padding to apply and makes it appear as a button */
+    padding: 10px 20px;             /* Adds space around the text */
+    background-color: #3B3D67;      /* Background color */
+    color: #fff;                    /* White text */
+    text-decoration: none;          /* Removes underline from link */
+    border-radius: 5px;             /* Rounds the corners */
+    font-weight: bold; 
+    font-size: 100%;             /* Makes text bold */
+    text-align: center;             /* Centers text inside the button */
+    cursor: pointer;                /* Changes cursor to pointer on hover */
+}
+
+.intro-link a:hover {
+    background-color: #2A2B4F; 
+}
+
+.mars-link a {
+
+    display: inline-block;          /* Allows padding to apply and makes it appear as a button */
+    padding: 10px 20px;             /* Adds space around the text */
+    background-color: #97311D;      /* Background color */
+    color: #fff;                    /* White text */
+    text-decoration: none;          /* Removes underline from link */
+    border-radius: 5px;             /* Rounds the corners */
+    font-weight: bold; 
+    font-size: 100%;             /* Makes text bold */
+    text-align: center;             /* Centers text inside the button */
+    cursor: pointer;                /* Changes cursor to pointer on hover */
 
 }
 
+.mars-link a:hover {
+    background-color: #662113;   
+}
 
+
+.jupiter-link a {
+
+    display: inline-block;          /* Allows padding to apply and makes it appear as a button */
+    padding: 10px 20px;             /* Adds space around the text */
+    background-color: #796A7F;      /* Background color */
+    color: #fff;                    /* White text */
+    text-decoration: none;          /* Removes underline from link */
+    border-radius: 5px;             /* Rounds the corners */
+    font-weight: bold; 
+    font-size: 100%;             /* Makes text bold */
+    text-align: center;             /* Centers text inside the button */
+    cursor: pointer; 
+
+}
+
+.jupiter-link a:hover {
+    background-color: #4c434f;
+}

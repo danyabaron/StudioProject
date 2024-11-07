@@ -1,6 +1,8 @@
 ::LET'S BLOW THIS ASTEROID UP
 
-!!Defeat the incoming asteroids with Mars' help!
+!!Defeat the incoming asteroids with Mars' help! If you lose... Jupiter's solution will win.
+Press down on your Left and Right arrow keys to move Mars, and press Space to shoot.
+
 <div id="mars-game"></div>
 
 

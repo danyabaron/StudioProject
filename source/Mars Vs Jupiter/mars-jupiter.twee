@@ -11,7 +11,7 @@ Man, let’s just blow this asteroid up. I seriously don’t know what all the f
 
 Unless Jupiter has a better idea. They probably won’t though.
 
-[[Jupiter?]]
+<span class='mars-link'>[[Jupiter?]]</span>
 
 :: Jupiter?[jupiter]
 <div id="jupiter-img" class="img-container">
@@ -27,7 +27,7 @@ I say try to negotiate with the guy. Or maybe there’s a greater purpose to all
 
 Ugh... what is Mars trying to say now?
 
-[[I think Mars is trying to say something]]
+<span class='jupiter-link'>[[I think Mars is trying to say something]]</span>
 
 :: I think Mars is trying to say something[mars]
 
@@ -44,10 +44,18 @@ Sometimes things in life aren’t a sign. Sometimes you need to fight back. That
 
 I mean think about that time you were in traffic yesterday, and that dude cut you off. Didn’t you wanna just scream at him?
 
-/* -- I don't think I was in traffic yesterday -- (add this button functionality later) */
+<span class='mars-link'>[[I don't think I was in traffic yesterday...]]</span>
+
+:: I don't think I was in traffic yesterday...[mars]
+<div id="mars-img" class="img-container">
+    <<nobr>>
+        <img src="assets\mars-art\mars-art-official.png" width="253" height="253">
+    <</nobr>>
+
+</div>
 No, it's a metaphor. Ugh. I am just saying to EMBRACE the rage! This asteroid obviously has an issue with us, otherwise it wouldn’t be hurtling over here. I’m just saying to not let it get away with this.
 
-[[I guess you make a good point]]
+<span class='mars-link'>[[I guess you make a good point]]</span>
 
 :: I guess you make a good point[jupiter]
 
@@ -63,7 +71,7 @@ Mars needs to just listen to others for once. Not everything needs to be filled 
 The universe is expansive. Maybe there’s a greater meaning behind all of this. Maybe the asteroid isn’t even hitting us, maybe 
 it’s coming over here to offer us something. Regardless, I think everything will be okay in the end.
 
-[[I sure hope so]]
+<span class='jupiter-link'>[[I sure hope so]]</span>
 
 :: I sure hope so
 
@@ -72,5 +80,6 @@ Mars wants to fight the asteroid head on. Jupiter wants a more hands off approac
 
 Choose wisely, as this decision will require a little bit more of your help.
 
-[[LET'S BLOW THIS ASTEROID UP]]
-[[LET’S SEE WHAT THIS ASTEROID HAS TO BRING. LET’S TRY TO WORK IT OUT]]
+<span class='mars-link'>[[LET'S BLOW THIS ASTEROID UP]]</span>
+
+<span class='jupiter-link'>[[LET’S SEE WHAT THIS ASTEROID HAS TO BRING. LET’S TRY TO WORK IT OUT]]</span>
