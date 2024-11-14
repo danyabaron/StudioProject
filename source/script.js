@@ -17,6 +17,7 @@ setup.asteroidGame = function (p) {
         let asteroids = [];
         let bullets = [];
         let marsImg; // Variable to hold the Mars sprite image
+        let asteroidImg;
         let mars;    // Variable to hold Mars position and size
         let score = 0; // Player score
         let finalScore = 2000; // Goal score
@@ -24,7 +25,8 @@ setup.asteroidGame = function (p) {
     
         // Preload Mars image
         p.preload = function () {
-            marsImg = p.loadImage('./assets/mars-art/mars-art-official.png'); // Adjust path as needed
+            marsImg = p.loadImage('./assets/mars-art/mars-art-official.png'); 
+            asteroidImg = p.loadImage('./assets/asteroid-art/asteroid-sprite1.png');
         };
     
         p.setup = function () {
@@ -142,8 +144,10 @@ setup.asteroidGame = function (p) {
             }
     
             display() {
-                this.p.fill(200, 100, 100);
-                this.p.ellipse(this.x, this.y, this.size);
+                
+                    // Display the asteroid image instead of an ellipse
+                    this.p.image(asteroidImg, this.x - this.size / 2, this.y - this.size / 2, this.size, this.size);
+                
             }
     
             shrink() {

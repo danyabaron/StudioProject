@@ -1,0 +1,19 @@
+::LET’S SEE WHAT THIS ASTEROID HAS TO BRING. LET’S TRY TO WORK IT OUT
+
+Jupiter game here
+
+<div id="jupiter-game"></div>
+
+
+<span class='jupiter-link'>[[LET'S TALK TO SATURN]]</span>
+
+
+/* <<script>>
+console.log('before i load game in div');
+$(document).one(':passageend', function () {
+    setup.p5promise.then(function () {
+        new p5(setup.asteroidGame, 'mars-game');
+        });
+    });
+console.log('after i load game in div')
+<</script>> */

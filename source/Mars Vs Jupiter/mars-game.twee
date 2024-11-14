@@ -6,6 +6,8 @@ Press down on your Left and Right arrow keys to move Mars, and press Space to sh
 <div id="mars-game"></div>
 
 
+<span class='mars-link'>[[LET'S TALK TO VENUS]]</span>
+
 
 <<script>>
 console.log('before i load game in div');

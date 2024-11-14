@@ -2,5 +2,6 @@
     "twee3LanguageTools.storyformat.current": "sugarcube-2",
     "twee3LanguageTools.passageCounter.openStoryMapWithoutConfirmation": true,
     "twee3LanguageTools.passage.list": true,
-    "twee3LanguageTools.passage.group": "Folder"
+    "twee3LanguageTools.passage.group": "Folder",
+    "liveServer.settings.port": 5501
 }
