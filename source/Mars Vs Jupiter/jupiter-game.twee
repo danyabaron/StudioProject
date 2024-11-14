@@ -8,12 +8,12 @@ Jupiter game here
 <span class='jupiter-link'>[[LET'S TALK TO SATURN]]</span>
 
 
-/* <<script>>
-console.log('before i load game in div');
+<<script>>
+console.log('before i load jupiter game in div');
 $(document).one(':passageend', function () {
     setup.p5promise.then(function () {
-        new p5(setup.asteroidGame, 'mars-game');
+        new p5(setup.jupiterGame, 'jupiter-game');
         });
     });
-console.log('after i load game in div')
-<</script>> */
+console.log('after i load jupiter game in div')
+<</script>>
