@@ -71,6 +71,11 @@ img {
     flex-direction: row;
 }
 
+.planet-images-click {
+    display: flex;
+    flex-direction: row;
+}
+
   .planet-images-intro {
     display: flex;
     flex-direction: column;

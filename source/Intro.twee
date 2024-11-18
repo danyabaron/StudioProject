@@ -85,7 +85,44 @@ Make sure to keep an open mind, and listen to everyone.
 
   <</nobr>>
 
+:: Let's do this
 
+Pick which planet you want to speak to first.
+
+<div class='planet-images-click'>
+<div class='jupiter-intro-container'>
+    <div id="jupiter-img" class="img-container">
+      <<nobr>>
+        
+        <img src="assets\jupiter-art\jupiter-art.png" height="153">
+      <</nobr>>
+    </div>
+  </div>
+
+
+  <div id="mars-img" class="img-container">
+  
+    <<nobr>>
+      <a class="link" data-passage="mars-jupiter"> <!-- Link to Mars-Jupiter passage -->
+        <img src="assets/mars-art/mars-art-official.png" width="153" height="153" alt="Mars">
+      </a>
+    <</nobr>>
+  </div>
+  
+
+
+
+  <div id="saturn-img" class="img-container">
+    <<nobr>>
+        <img src="assets\saturn-art\saturn-mouth-open.png" width="332" height="173">
+    <</nobr>>
+  </div>
+
+<div class='venus-intro-container'>
+  <div id="venus-img" class="img-container">
+    <img src="assets\venus-art\venus-default.png" width="153" height="153">
+  </div>
+</div>
 
 
 
