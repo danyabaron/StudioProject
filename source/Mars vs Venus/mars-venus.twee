@@ -1,3 +1,11 @@
 :: LET'S TALK TO VENUS
 
-hi
+<div id="venus-img" class="img-container">
+    <<nobr>>
+        <img src="assets\venus-art\venus-default.png" width="253" height="253">
+    <</nobr>>
+</div>
+
+
+Maybe we can seduce this asteroid. Or invite him to party. I think that’s a great idea… Just put me in the front and I’ll take it from there.
+
