@@ -1,5 +1,5 @@
 :: StoryTitle
-Studio Project
+Cosmic Crossroads
 
 
 :: StoryData
@@ -7,14 +7,22 @@ Studio Project
   "ifid": "8D245948-8A92-4927-9B60-FDFE5F8EFAA0",
   "format": "SugarCube",
   "format-version": "2.36.1",
-  "start": "Intro",
+  "start": "TitleScreen",
   "zoom": 1
 }
 
 
+:: TitleScreen
 
-:: Intro {"position":"500,50","size":"100,100"}
-BOOM *loud crash sound effect*
+<div class='title-screen'>
+!!Cosmic Crossroads
+
+<span class='intro-link'>[[Start]]</span>
+</div>
+
+:: Start[intro]
+
+BOOM 
 
 ...
 
@@ -25,7 +33,99 @@ An asteroid is heading to you full speed.
 You need to intervene to save your home. But your friends have different ideas on how to save it. 
 
 
-[[Your time is limited.]]
+<span class='intro-link'>[[What do I need to do?]]</span>
+
+::What do I need to do?[intro]
+
+<div class='planets-intro'>
+
+<div class='planets-intro-text'>
+You must talk with your fellow planets to figure out a solution to save your home.
+
+Make sure to keep an open mind, and listen to everyone.
+
+
+<span class='intro-link'>[[Let's do this]]</span>
+</div>
+<<nobr>>
+<div class='planet-images-intro'>
+<div class='jupiter-intro-container'>
+    <div id="jupiter-img" class="img-container">
+      <<nobr>>
+        <img src="assets\jupiter-art\jupiter-art.png" height="153">
+      <</nobr>>
+    </div>
+  </div>
+
+<div class='mars-intro-container'>
+  <div id="mars-img" class="img-container">
+    <<nobr>>
+        <img src="assets\mars-art\mars-art-official.png" width="153" height="153">
+    <</nobr>>
+  </div>
+  <div class='saturn-intro-container'>
+  <div id="saturn-img" class="img-container">
+    <<nobr>>
+        <img src="assets\saturn-art\saturn-mouth-open.png" width="332" height="173">
+    <</nobr>>
+  </div>
+  </div>
+</div>
+
+<div class='venus-intro-container'>
+  <div id="venus-img" class="img-container">
+    <img src="assets\venus-art\venus-default.png" width="153" height="153">
+  </div>
+</div>
+
+</div>
+
+
+
+
+  <</nobr>>
+
+:: Let's do this
+
+Pick which planet you want to speak to first.
+
+<div class='planet-images-click'>
+<div class='jupiter-intro-container'>
+    <div id="jupiter-img" class="img-container">
+      <<nobr>>
+        
+        <img src="assets\jupiter-art\jupiter-art.png" height="153">
+      <</nobr>>
+    </div>
+  </div>
+
+
+  <div id="mars-img" class="img-container">
+  
+    <<nobr>>
+      <a class="link" data-passage="mars-jupiter"> <!-- Link to Mars-Jupiter passage -->
+        <img src="assets/mars-art/mars-art-official.png" width="153" height="153" alt="Mars">
+      </a>
+    <</nobr>>
+  </div>
+  
+
+
+
+  <div id="saturn-img" class="img-container">
+    <<nobr>>
+        <img src="assets\saturn-art\saturn-mouth-open.png" width="332" height="173">
+    <</nobr>>
+  </div>
+
+<div class='venus-intro-container'>
+  <div id="venus-img" class="img-container">
+    <img src="assets\venus-art\venus-default.png" width="153" height="153">
+  </div>
+</div>
+
+
+
 
 
 

@@ -1,10 +1,23 @@
 ::LET'S BLOW THIS ASTEROID UP
 
-!!Below you should see a basic p5js asteroid game.
-<div id="p5sketch"></div>
+!!Defeat the incoming asteroids with Mars' help! If you lose... Jupiter's solution will win.
+Press down on your Left and Right arrow keys to move Mars, and press Space to shoot.
+
+<div id="mars-game"></div>
+
+
+<span class='mars-link'>[[LET'S TALK TO VENUS]]</span>
+
 
 <<script>>
-$(document).on(':passageend', function () {
-        new p5(setup.asteroidGame, 'p5sketch');
+console.log('before i load game in div');
+$(document).one(':passageend', function () {
+    setup.p5promise.then(function () {
+        new p5(setup.asteroidGame, 'mars-game');
+        });
     });
+console.log('after i load game in div')
 <</script>>
+
+
+
