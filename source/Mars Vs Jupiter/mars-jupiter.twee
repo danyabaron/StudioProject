@@ -43,8 +43,13 @@ WAR GODAMMIT WAR! God. No one ever wants to go to war with me. Jupiter thinks th
 Sometimes things in life aren’t a sign. Sometimes you need to fight back. That’s all I’m trying to say here.
 
 I mean think about that time you were in traffic yesterday, and that dude cut you off. Didn’t you wanna just scream at him?
-
-<span class='mars-link'>[[I don't think I was in traffic yesterday...]]</span>
+<span id="my-link">
+<<link "I don't think I was in traffic yesterday">><<replace '#marstext' >>No, it's a metaphor. Ugh. I am just saying to EMBRACE the rage! This asteroid obviously has an issue with us, otherwise it wouldn’t be hurtling over here. I’m just saying to not let it get away with this.
+<</replace>>
+<<remove '#my-link'>>
+<</link>>
+</span>
+<span id="marstext"></span>
 
 :: I don't think I was in traffic yesterday...[mars]
 <div id="mars-img" class="img-container">

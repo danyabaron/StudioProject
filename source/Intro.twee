@@ -24,7 +24,13 @@ Cosmic Crossroads
 
 BOOM 
 
+
 ...
+ <div id="asteroid-img" class="img-container">
+    <<nobr>>
+        <img src="assets\asteroid-art\asteroid-sprite1.png" width="153" height="153">
+    <</nobr>>
+  </div>
 
 An asteroid is heading to you full speed.
 
@@ -32,6 +38,8 @@ An asteroid is heading to you full speed.
 
 You need to intervene to save your home. But your friends have different ideas on how to save it. 
 
+ 
+ 
 
 <span class='intro-link'>[[What do I need to do?]]</span>
 
