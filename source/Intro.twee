@@ -122,13 +122,19 @@ Pick which planet you want to speak to first.
 
   <div id="saturn-img" class="img-container">
     <<nobr>>
+        <a class="link" data-passage="saturn-jupiter">
         <img src="assets\saturn-art\saturn-mouth-open.png" width="332" height="173">
+        </a>
     <</nobr>>
   </div>
 
 <div class='venus-intro-container'>
   <div id="venus-img" class="img-container">
+  <<nobr>>
+    <a class="link" data-passage="mars-venus"> <!-- Link to Mars-Jupiter passage -->
     <img src="assets\venus-art\venus-default.png" width="153" height="153">
+    </a>
+  <</nobr>>
   </div>
 </div>
 

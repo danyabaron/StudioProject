@@ -31,7 +31,10 @@ setup.asteroidGame = function (p) {
     
         p.setup = function () {
             const gameContainer = document.getElementById("mars-game");
-            p.createCanvas(600, 400).parent(gameContainer);
+            p.createCanvas(800, 400).parent(gameContainer);
+            
+            
+
             
             // Create multiple asteroids with varying speeds
             for (let i = 0; i < 5; i++) {
@@ -42,18 +45,39 @@ setup.asteroidGame = function (p) {
         };
     
         p.draw = function () {
+            console.log(p.width, p.height);
+            
+            // p.clear();
+            // p.background(255, 0, 0);
+         
+
+
+            // console.log(Story.get('mars-venus'));
             if (gameOver) {
                 p.background(0);
                 p.fill(255);
                 p.textSize(32);
                 p.textAlign(p.CENTER, p.CENTER);
                 p.text("You Win! Final Score: " + score, p.width / 2, p.height / 2);
+
+
+                
+                console.log(Story.get('mars-venus')); // Logs the passage object if it exists
+                    if (Story.get('mars-venus')) {
+                        console.log('going to story');
+                        Engine.play('mars-venus');
+                        p.noLoop();
+                    } else {
+                console.error('Passage "mars-venus" does not exist.');
+                }    
+
                 return; // Stop drawing the game elements
+
             }
             
             p.background(0);
-    
-            // Display the score
+           
+            // // Display the score
             p.fill(255);
             p.textSize(24);
             p.text("Score: " + score, 10, 30);
@@ -197,10 +221,11 @@ setup.asteroidGame = function (p) {
         console.log('set up bullet');
     };
 
-console.log('after game runs');
+console.log('after mars game runs');
     
     
-console.log('before Jupiter game runs');
+
+
 setup.jupiterGame = function (p) {
     let asteroids = [];           // Array to hold multiple asteroids
     let jupiter;
@@ -238,7 +263,8 @@ setup.jupiterGame = function (p) {
     }
 
     p.draw = function() {
-        p.background(30, 30, 60);
+        p.background(0);
+
 
         // Draw Jupiter
         p.image(jupiterImg, jupiter.x - jupiter.size / 2, jupiter.y - jupiter.size / 2, jupiter.size, jupiter.size);
@@ -262,8 +288,25 @@ setup.jupiterGame = function (p) {
         // Check for game win or game over condition
         if (gameOver) {
             endGame("Game Over! One of the asteroids reached Jupiter.");
+            console.log(Story.get('mars-venus')); // Logs the passage object if it exists
+            if (Story.get('mars-venus')) {
+                console.log('going to story');
+                Engine.play('mars-venus');
+                p.noLoop();
+            } else {
+        console.error('Passage "mars-venus" does not exist.');
+        }   
+
         } else if (gameWon) {
             endGame("You Win! All asteroids were pushed away.");
+          
+            if (Story.get('saturn-jupiter')) {
+                console.log('going to story');
+                Engine.play('saturn-jupiter');
+                p.noLoop();
+            } else {
+        console.error('Passage "mars-venus" does not exist.');
+        }   
         }
     }
 

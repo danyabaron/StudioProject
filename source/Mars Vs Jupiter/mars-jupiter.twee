@@ -43,24 +43,54 @@ WAR GODAMMIT WAR! God. No one ever wants to go to war with me. Jupiter thinks th
 Sometimes things in life aren’t a sign. Sometimes you need to fight back. That’s all I’m trying to say here.
 
 I mean think about that time you were in traffic yesterday, and that dude cut you off. Didn’t you wanna just scream at him?
-<span id="my-link">
-<<link "I don't think I was in traffic yesterday">><<replace '#marstext' >>No, it's a metaphor. Ugh. I am just saying to EMBRACE the rage! This asteroid obviously has an issue with us, otherwise it wouldn’t be hurtling over here. I’m just saying to not let it get away with this.
+/* <<nobr>>
+<span class='mars-link'>
+<<link "I don't think I was in traffic yesterday">>
+<<replace '#marstext' >>No, it's a metaphor. Ugh. I am just saying to EMBRACE the rage! 
+    This asteroid obviously has an issue with us, otherwise it wouldn’t be hurtling over here. I’m just saying to not let it get away with this.
 <</replace>>
-<<remove '#my-link'>>
+<<set $marstextVisible = true>> 
+<<remove '.mars-link'>>
 <</link>>
+</span> 
+<</nobr>> */
+<<nobr>>
+<span class = 'mars-link'>
+<<linkreplace "I don't think I was in traffic yesterday">>
+    
+    No, it's a metaphor. Ugh. I am just saying to EMBRACE the rage! 
+    This asteroid obviously has an issue with us, otherwise it wouldn’t be hurtling over here. 
+   <br>
+   <br>
+        <span class='mars-link'>[[I guess you make a good point]]</span>
+    <br>
+    <br>
+    
+    <</linkreplace>>
 </span>
-<span id="marstext"></span>
+<</nobr>>
 
-:: I don't think I was in traffic yesterday...[mars]
-<div id="mars-img" class="img-container">
+/* <span id="marstext">
+
+
+</span> */
+
+
+
+
+
+
+
+/* :: I don't think I was in traffic yesterday...[mars] */
+/* <div id="mars-img" class="img-container">
     <<nobr>>
         <img src="assets\mars-art\mars-art-official.png" width="253" height="253">
     <</nobr>>
 
-</div>
-No, it's a metaphor. Ugh. I am just saying to EMBRACE the rage! This asteroid obviously has an issue with us, otherwise it wouldn’t be hurtling over here. I’m just saying to not let it get away with this.
+</div> */
 
-<span class='mars-link'>[[I guess you make a good point]]</span>
+
+
 
 :: I guess you make a good point[jupiter]
 
@@ -76,7 +106,10 @@ Mars needs to just listen to others for once. Not everything needs to be filled 
 The universe is expansive. Maybe there’s a greater meaning behind all of this. Maybe the asteroid isn’t even hitting us, maybe 
 it’s coming over here to offer us something. Regardless, I think everything will be okay in the end.
 
-<span class='jupiter-link'>[[I sure hope so]]</span>
+<span class='jupiter-link'>[[I sure hope so]]
+
+
+</span>
 
 :: I sure hope so
 

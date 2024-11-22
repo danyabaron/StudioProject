@@ -1,4 +1,4 @@
-:: LET'S TALK TO VENUS
+::mars-venus[venus]
 
 <div id="venus-img" class="img-container">
     <<nobr>>
@@ -7,5 +7,98 @@
 </div>
 
 
-Maybe we can seduce this asteroid. Or invite him to party. I think that’s a great idea… Just put me in the front and I’ll take it from there.
+Maybe we can seduce this asteroid. Or invite him to party. I think that’s a great idea… 
+Just put me in the front and I’ll take it from there.
+
+<<nobr>>
+<span class = 'venus-link'>
+<<linkreplace "How would you seduce the asteroid?">>
+    <<nobr>>
+    Duh. I’m Venus. Everyone knows who I am, and everyone knows I’m a good time.
+    <</nobr>>
+    <br>
+        <span class='venus-link'>[[A party could be fun]]</span>
+    
+    
+    <</linkreplace>>
+</span>
+<</nobr>>
+
+::A party could be fun[mars]
+
+<div id="mars-img" class="img-container">
+    <<nobr>>
+        <img src="assets\mars-art\mars-art-official.png" width="253" height="253">
+    <</nobr>>
+</div>
+
+Venus always wants to take the sweet approach. This is why we always argue. One time Venus and I went out… I know, I know, crazy. There’s a lot of sexual tension with her.
+<<nobr>>
+<span class = 'mars-link'>
+<<linkreplace "Okay... how is this related to the crisis?">>
+    <<nobr>>
+     Oh right! See Venus’ effect? I completely forgot about it. Like I said… Let’s blow this asteroid up!!!
+    <</nobr>>
+    <br>
+        <span class='mars-link'>[[Does Venus agree?]]</span>  
+    <</linkreplace>>
+</span>
+<</nobr>>
+
+:: Does Venus agree?[venus]
+
+<div id="venus-img" class="img-container">
+    <<nobr>>
+        <img src="assets\venus-art\venus-default.png" width="253" height="253">
+    <</nobr>>
+</div>
+
+ Well obviously Mars has a thing for me. Who doesn’t? But he’s always wanting to be so impulsive! 
+
+<<nobr>>
+<span class = 'venus-link'>
+<<linkreplace "...">>
+    <<nobr>>
+    Mars and I may never see eye to eye… as much as I can’t resist him. He definitely is jealous that I want to check this asteroid out.
+    <</nobr>>
+    <br>
+        <span class='venus-link'>
+            <<linkreplace "What would you say to the asteroid?">>
+                Or we could make new friends with the asteroid. 
+                Who knows! Maybe the asteroid is lonely and that’s why 
+                it’s coming over here. Mars needs to stop asserting dominance for no reason.
+                <span class='venus-link'>[[Mars?]]</span>
+            <</linkreplace>>        
+        </span> 
+    <</linkreplace>>
+    
+</span>
+<</nobr>>
+
+::Mars?[mars]
+
+<div id="mars-img" class="img-container">
+    <<nobr>>
+        <img src="assets\mars-art\mars-art-official.png" width="253" height="253">
+    <</nobr>>
+</div>
+
+Venus is so naive. Not everything can be so nice, and usually things aren’t. Obviously this asteroid is coming over to DESTROY us. Does Venus not understand that? 
+
+<span class='mars-link'>[[Well...]]</span>
+
+::Well...
+
+<span class='mars-link'>[[It’s up to you my friend… but I urge you to channel your inner Martian.]]</span>
+
+<span class='venus-link'>[[Cmon, don’t you wanna try to have a good time?]]</span>
+
+
+
+    
+
+
+
+
+
 
