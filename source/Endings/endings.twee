@@ -1,0 +1,17 @@
+/* 
+<<if $choices[0] == "Jupiter" and $choices[1] == "Saturn" and $choices[2] == "Mars">>
+  The planets are saved! Congratulations.
+<<elseif $choices[0] == "Mars" and $choices[1] == "Venus" and $choices[2] == "Saturn">>
+  The planets are saved! Congratulations.
+<<else>>
+  The planets were not saved. Try again. */
+
+
+<<if $choices is ["Jupiter", "Saturn", "Mars"]>>
+  The planets are saved! Congratulations.
+<<elseif $choices is ["Mars", "Venus", "Saturn"]>>
+  The planets are saved! Congratulations.
+<<else>>
+  The planets were not saved. Try again.
+<</if>>
+

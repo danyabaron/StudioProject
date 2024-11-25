@@ -43,17 +43,8 @@ WAR GODAMMIT WAR! God. No one ever wants to go to war with me. Jupiter thinks th
 Sometimes things in life aren’t a sign. Sometimes you need to fight back. That’s all I’m trying to say here.
 
 I mean think about that time you were in traffic yesterday, and that dude cut you off. Didn’t you wanna just scream at him?
-/* <<nobr>>
-<span class='mars-link'>
-<<link "I don't think I was in traffic yesterday">>
-<<replace '#marstext' >>No, it's a metaphor. Ugh. I am just saying to EMBRACE the rage! 
-    This asteroid obviously has an issue with us, otherwise it wouldn’t be hurtling over here. I’m just saying to not let it get away with this.
-<</replace>>
-<<set $marstextVisible = true>> 
-<<remove '.mars-link'>>
-<</link>>
-</span> 
-<</nobr>> */
+
+
 <<nobr>>
 <span class = 'mars-link'>
 <<linkreplace "I don't think I was in traffic yesterday">>
@@ -118,6 +109,7 @@ Mars wants to fight the asteroid head on. Jupiter wants a more hands off approac
 
 Choose wisely, as this decision will require a little bit more of your help.
 
-<span class='mars-link'>[[LET'S BLOW THIS ASTEROID UP]]</span>
+<span class='mars-link'>[[LET'S BLOW THIS ASTEROID UP]]<<set $choices.push("Mars")>></span>
 
-<span class='jupiter-link'>[[LET’S SEE WHAT THIS ASTEROID HAS TO BRING. LET’S TRY TO WORK IT OUT]]</span>
+<span class='jupiter-link'>[[LET’S SEE WHAT THIS ASTEROID HAS TO BRING. LET’S TRY TO WORK IT OUT]]
+<<set $choices.push("Jupiter")>></span>

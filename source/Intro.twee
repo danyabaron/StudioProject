@@ -22,6 +22,8 @@ Cosmic Crossroads
 
 :: Start[intro]
 
+<<set $choices = []>>
+
 BOOM 
 
 
@@ -49,6 +51,8 @@ You need to intervene to save your home. But your friends have different ideas o
 
 <div class='planets-intro-text'>
 You must talk with your fellow planets to figure out a solution to save your home.
+
+But pay attention to 
 
 Make sure to keep an open mind, and listen to everyone.
 
@@ -101,8 +105,9 @@ Pick which planet you want to speak to first.
 <div class='jupiter-intro-container'>
     <div id="jupiter-img" class="img-container">
       <<nobr>>
-        
-        <img src="assets\jupiter-art\jupiter-art.png" height="153">
+        <a class="link" data-passage="saturn-jupiter"> <!-- Link to Mars-Jupiter passage -->
+          <img src="assets\jupiter-art\jupiter-art.png" height="153">
+        </a>
       <</nobr>>
     </div>
   </div>
@@ -122,7 +127,7 @@ Pick which planet you want to speak to first.
 
   <div id="saturn-img" class="img-container">
     <<nobr>>
-        <a class="link" data-passage="saturn-jupiter">
+        <a class="link" data-passage="venus-saturn">
         <img src="assets\saturn-art\saturn-mouth-open.png" width="332" height="173">
         </a>
     <</nobr>>

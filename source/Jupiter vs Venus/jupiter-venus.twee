@@ -1,0 +1,63 @@
+::jupiter-venus
+
+<div id="jupiter-img" class="img-container">
+    <<nobr>>
+        <img src="assets\jupiter-art\jupiter-art.png" width="332" height="173">
+    <</nobr>>
+</div>
+
+We should have a partayyyy for the asteroids
+
+
+[[venus dialogue]]
+
+<div id="venus-img" class="img-container">
+    <<nobr>>
+        <img src="assets\venus-art\venus-default.png" width="253" height="253">
+    <</nobr>>
+</div>
+
+
+Oh yes I totally agree! 
+
+[[jupiter dialogue]]
+
+::jupiter dialogue
+
+<div id="jupiter-img" class="img-container">
+    <<nobr>>
+        <img src="assets\jupiter-art\jupiter-art.png" width="332" height="173">
+    <</nobr>>
+</div>
+
+But Venus, try not to be too flirty. It could screw us over.
+
+
+[[venus dialogue 2]]
+
+::venus dialogue 2
+
+<div id="venus-img" class="img-container">
+    <<nobr>>
+        <img src="assets\venus-art\venus-default.png" width="253" height="253">
+    <</nobr>>
+</div>
+
+Ugh what do you mean? When have I ever been flirty?
+
+[[jupiter dialogue 2]]
+
+::jupiter dialogue 2
+
+<div id="jupiter-img" class="img-container">
+    <<nobr>>
+        <img src="assets\jupiter-art\jupiter-art.png" width="332" height="173">
+    <</nobr>>
+</div>
+
+you know you are let's be honest. 
+
+[[player choose venus]] <<set $choices.push("Venus")>>
+[[player choose jupiter]]<<set $choices.push("Jupiter")>>
+
+

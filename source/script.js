@@ -63,9 +63,9 @@ setup.asteroidGame = function (p) {
 
                 
                 console.log(Story.get('mars-venus')); // Logs the passage object if it exists
-                    if (Story.get('mars-venus')) {
+                    if (Story.get('after-mars-game-1')) {
                         console.log('going to story');
-                        Engine.play('mars-venus');
+                        Engine.play('after-mars-game-1');
                         p.noLoop();
                     } else {
                 console.error('Passage "mars-venus" does not exist.');
@@ -289,9 +289,9 @@ setup.jupiterGame = function (p) {
         if (gameOver) {
             endGame("Game Over! One of the asteroids reached Jupiter.");
             console.log(Story.get('mars-venus')); // Logs the passage object if it exists
-            if (Story.get('mars-venus')) {
+            if (Story.get('jupiter-saturn')) {
                 console.log('going to story');
-                Engine.play('mars-venus');
+                Engine.play('jupiter-saturn');
                 p.noLoop();
             } else {
         console.error('Passage "mars-venus" does not exist.');

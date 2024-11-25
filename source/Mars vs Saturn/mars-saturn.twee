@@ -1,0 +1,55 @@
+::mars-saturn[mars]
+
+<div id="mars-img" class="img-container">
+    <<nobr>>
+        <img src="assets\mars-art\mars-art-official.png" width="253" height="253">
+    <</nobr>>
+</div>
+
+I really want to fight these asteroids mannn. 
+
+[[saturn mars dialogue 1]]
+
+::saturn mars dialogue 1
+
+<div id="saturn-img" class="img-container">
+    <<nobr>>
+        <img src="assets\saturn-art\saturn-mouth-open.png" width="253" height="253">
+    <</nobr>>
+</div>
+
+I don't think fighting is the answer here Mars.
+
+[[saturn mars dialogue 2]]
+
+::saturn mars dialogue 2
+
+<div id="mars-img" class="img-container">
+    <<nobr>>
+        <img src="assets\mars-art\mars-art-official.png" width="253" height="253">
+    <</nobr>>
+</div>
+
+
+Why not? Let's have fun together Saturn. Live a little!
+
+[[saturn mars dialogue 3]]
+
+::saturn mars dialogue 3
+
+<div id="saturn-img" class="img-container">
+    <<nobr>>
+        <img src="assets\saturn-art\saturn-mouth-open.png" width="253" height="253">
+    <</nobr>>
+</div>
+
+Fun is not the answer here
+
+[[player choose saturn]]<<set $choices.push("Saturn")>>
+[[player choose mars]]<<set $choices.push("Mars")>>
+
+
+
+
+
+

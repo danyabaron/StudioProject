@@ -1,0 +1,49 @@
+::venus-saturn
+
+<div id="saturn-img" class="img-container">
+    <<nobr>>
+        <img src="assets\saturn-art\saturn-mouth-open.png" width="253" height="253">
+    <</nobr>>
+</div>
+
+I truly feel like venus doesn't understand the consequences of her actions
+
+[[venus-saturn-dialogue]]
+
+::venus-saturn-dialogue
+
+<div id="venus-img" class="img-container">
+    <<nobr>>
+        <img src="assets\venus-art\venus-default.png" width="253" height="253">
+    <</nobr>>
+</div>
+
+I wanna talk to the asteroids sooo bad. Why don't anyone let me talk to them?
+
+[[venus-saturn-dialogue-1]]
+
+::venus-saturn-dialogue-1
+
+<div id="saturn-img" class="img-container">
+    <<nobr>>
+        <img src="assets\saturn-art\saturn-mouth-open.png" width="253" height="253">
+    <</nobr>>
+</div>
+
+Venus is a child. She doesn't understand the consequences of her own actions. 
+
+[[venus-saturn-dialogue-2]]
+
+::venus-saturn-dialogue-2
+
+<div id="venus-img" class="img-container">
+    <<nobr>>
+        <img src="assets\venus-art\venus-default.png" width="253" height="253">
+    <</nobr>>
+</div>
+
+Saturn is a boring old fart! He is limiting me on what I want to do. 
+
+[[player choose venus]]<<set $choices.push("Venus")>>
+[[player choose saturn]]<<set $choices.push("Saturn")>>
+

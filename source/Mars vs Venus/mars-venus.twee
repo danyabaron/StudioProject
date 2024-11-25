@@ -1,3 +1,18 @@
+::after-mars-game-1[mars]
+
+<div id="mars-img" class="img-container">
+    <<nobr>>
+        <img src="assets\mars-art\mars-art-official.png" width="253" height="253">
+    <</nobr>>
+</div>
+
+Man, that felt so good. I love shooting those asteroids down. But I still feel like people 
+don't want to
+shoot with me. 
+
+I think Venus had another idea. I don't think it's a good idea though.
+
+
 ::mars-venus[venus]
 
 <div id="venus-img" class="img-container">
@@ -5,7 +20,6 @@
         <img src="assets\venus-art\venus-default.png" width="253" height="253">
     <</nobr>>
 </div>
-
 
 Maybe we can seduce this asteroid. Or invite him to party. I think that’s a great idea… 
 Just put me in the front and I’ll take it from there.
@@ -89,9 +103,11 @@ Venus is so naive. Not everything can be so nice, and usually things aren’t. O
 
 ::Well...
 
-<span class='mars-link'>[[It’s up to you my friend… but I urge you to channel your inner Martian.]]</span>
+<span class='mars-link'>[[It’s up to you my friend… but I urge you to channel your inner Martian.]]
+<<set $choices.push("Mars")>></span>
 
-<span class='venus-link'>[[Cmon, don’t you wanna try to have a good time?]]</span>
+<span class='venus-link'>[[Cmon, don’t you wanna try to have a good time?]]
+<<set $choices.push("Venus")>></span>
 
 
 
